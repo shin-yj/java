@@ -1,0 +1,24 @@
+package com.demoweb.servlet;
+
+import java.io.IOException;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+@WebServlet(urlPatterns= {"/home.action"})
+public class HomeServlet extends HttpServlet { // get방식 // home.action에 요청이 들어오면 homesevlet으로 요청 들어온당
+	
+	@Override
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+
+
+	}
+
+}
+
+
+
+

@@ -1,0 +1,9 @@
+INDEX VERSION 1.131
+C:\YJ\workspace\java-web\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\47600658.index
+\demoweb\src
+C:\YJ\workspace\java-web\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3140779364.index
+\demoweb\src
+C:\YJ\workspace\java-web\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1118316493.index
+\demoweb\src
+C:\YJ\workspace\java-web\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\625868637.index
+\example-web\src

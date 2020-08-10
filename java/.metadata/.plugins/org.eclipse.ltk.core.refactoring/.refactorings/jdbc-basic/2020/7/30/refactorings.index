@@ -1,0 +1,8 @@
+1595208162519	Copy compilation unit
+1595210785010	Copy compilation unit
+1595228869229	Encapsulate field 'regDate'
+1595230024324	Copy compilation unit
+1595235122831	Extract method 'searchContact'
+1595235226325	Extract method 'deleteContact'
+1595489042380	Delete element
+1595578897774	Rename type '신연재'

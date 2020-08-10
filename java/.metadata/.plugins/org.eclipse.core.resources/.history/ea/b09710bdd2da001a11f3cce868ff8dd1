@@ -1,0 +1,652 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Your name :  John Doe\n"
+     ]
+    }
+   ],
+   "source": [
+    "name=input(\"Your name : \")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "John Doe\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(name)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import random # 미리 만들어진 모듈 가져오기"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "print(random.randint(0,100)) # 0부터 100 안의 범위안의 데이터 가져오기 (0,100도 가능)\n",
+    "print(random.random()) # 0과 1사이의 데이터"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "n = random.randint(-1, 1)\n",
+    "print(n)\n",
+    "if n > 0: # if 조건문 :\n",
+    "    print(\"Positive Number\")\n",
+    "elif n == 0: # elif 조건문 : \n",
+    "    print(\"Zero\")\n",
+    "else:\n",
+    "    print(\"Negative Number\") # else만 else뒤 바로 : 붙임"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 191,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "n == 1\n"
+     ]
+    }
+   ],
+   "source": [
+    "n = random.randint(0,1) #0 or 1\n",
+    "#if n == 1:\n",
+    "if n: # 0이 아닌 경우 -> 좋은 코딩은 아님\n",
+    "    print('n == 1')\n",
+    "else:\n",
+    "    print('n == 0')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 192,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "True\n",
+      "False\n",
+      "False\n",
+      "False\n",
+      "**********\n",
+      "True\n",
+      "True\n",
+      "True\n",
+      "False\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(True and True)\n",
+    "print(True and False)\n",
+    "print(False and True)\n",
+    "print(False and False)\n",
+    "print(\"*\" * 10 )\n",
+    "print(True or True)\n",
+    "print(True or False)\n",
+    "print(False or True)\n",
+    "print(False or False)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 198,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "True\n",
+      "False\n",
+      "False\n",
+      "True\n"
+     ]
+    }
+   ],
+   "source": [
+    "a= [1,2,3]\n",
+    "b= \"Hello\"\n",
+    "print(2 in a)\n",
+    "print('lx' in b)\n",
+    "print( 2 not in a)\n",
+    "print('lx' not in b)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 206,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "반복 횟수 :  15\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "0\n",
+      "1\n",
+      "2\n",
+      "3\n",
+      "4\n",
+      "5\n",
+      "6\n",
+      "7\n",
+      "8\n",
+      "9\n",
+      "10\n",
+      "11\n",
+      "12\n",
+      "13\n",
+      "14\n",
+      "The End !!!\n"
+     ]
+    }
+   ],
+   "source": [
+    "n = input('반복 횟수 : ')\n",
+    "n = int(n) # input은 문자열으로 되므로 문자열 -> 숫자\n",
+    "idx = 0 \n",
+    "while idx < n:\n",
+    "    print(idx)\n",
+    "    idx += 1 # idx = idx + 1\n",
+    "print(\"The End !!!\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 207,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "1\n",
+      "2\n",
+      "3\n",
+      "4\n",
+      "5\n"
+     ]
+    }
+   ],
+   "source": [
+    "for x in[1, 2, 3, 4, 5]:\n",
+    "    print(x)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 212,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "10\n",
+      "9\n",
+      "8\n",
+      "7\n",
+      "6\n",
+      "5\n",
+      "4\n",
+      "3\n",
+      "2\n"
+     ]
+    }
+   ],
+   "source": [
+    "#for x in range(1, 10): # range -> 범위의 data를 list로 만듬\n",
+    "#for x in range( 1, 10, 2 ):\n",
+    "for x in range(10,1,-1):\n",
+    "    print(x)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "1\n",
+      "(2, 3)\n",
+      "(1, 2, 3)\n",
+      "(2, 3, 4, 5)\n"
+     ]
+    }
+   ],
+   "source": [
+    "tpl = (1, 2, 3, 4, 5)\n",
+    "print(tpl[0])\n",
+    "print(tpl[1:3])\n",
+    "print(tpl[:3])\n",
+    "print(tpl[1:])\n",
+    "# del tpl[3] 수정 불가이므로 지울 수 없음\n",
+    "# tpl[3] = 2 -> 수정 불가"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 6,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "<class 'tuple'>\n"
+     ]
+    }
+   ],
+   "source": [
+    "tpl2 = 1,2 # 괄호 안 씀 -> 튜플\n",
+    "print(type(tpl2)) # 목록이라고 생각이 되면 파이선은 튜플로 바꿈"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 13,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "1\n",
+      "{'no': 1, 'name ': 'John Doe', 'phone': '010-6587-2169'}\n"
+     ]
+    },
+    {
+     "ename": "TypeError",
+     "evalue": "unhashable type: 'slice'",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[1;31m---------------------------------------------------------------------------\u001b[0m",
+      "\u001b[1;31mTypeError\u001b[0m                                 Traceback (most recent call last)",
+      "\u001b[1;32m<ipython-input-13-d28c836ca5e5>\u001b[0m in \u001b[0;36m<module>\u001b[1;34m\u001b[0m\n\u001b[0;32m      5\u001b[0m \u001b[0mprint\u001b[0m\u001b[1;33m(\u001b[0m\u001b[0md\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m      6\u001b[0m \u001b[1;31m# print(d['no':'email']) # 슬라이싱은 불가!!\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[1;32m----> 7\u001b[1;33m \u001b[0mprint\u001b[0m\u001b[1;33m(\u001b[0m\u001b[0md\u001b[0m\u001b[1;33m[\u001b[0m\u001b[1;34m'no'\u001b[0m\u001b[1;33m:\u001b[0m\u001b[1;34m'email'\u001b[0m\u001b[1;33m]\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0m",
+      "\u001b[1;31mTypeError\u001b[0m: unhashable type: 'slice'"
+     ]
+    }
+   ],
+   "source": [
+    "#dictionary\n",
+    "d = { 'no' : 1, 'name ' : 'John Doe', 'email' : 'johndoe@example.com','phone': '010-6587-2169'}\n",
+    "print(d['no']) # d[0]불가, key로 불러야 함. key가 'no'인 데이터 검색\n",
+    "del d['email']\n",
+    "print(d)\n",
+    "# print(d['no':'email']) # 슬라이싱은 불가!!\n",
+    "# print(d['no':'email']) 슬라이싱 불가"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 17,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "{'no': 1, 'name ': 'John Doe', 'email': 'johndoe@example.com', 'phone': '010-6587-2169'}\n",
+      "{'no': 1, 'name ': 'John Doe', 'email': 'johndoe@example.com', 'phone': '010-6587-2169'}\n",
+      "dict_keys(['a', 'b'])\n"
+     ]
+    }
+   ],
+   "source": [
+    "persons = [{ \n",
+    "    'no' : 1,\n",
+    "    'name ' : 'John Doe',\n",
+    "    'email' : 'johndoe@example.com',\n",
+    "    'phone': '010-6587-2169'\n",
+    "}, { \n",
+    "    'no' : 1,\n",
+    "    'name ' : 'Jane Doe',\n",
+    "    'email' : 'janedoe@example.com',\n",
+    "    'phone': '010-4796-1346'\n",
+    "}] # []리스트로 정의 (내용만 관리)\n",
+    "persons2 = {'a' : { \n",
+    "    'no' : 1,\n",
+    "    'name ' : 'John Doe',\n",
+    "    'email' : 'johndoe@example.com',\n",
+    "    'phone': '010-6587-2169'\n",
+    "}, 'b' : { \n",
+    "    'no' : 1,\n",
+    "    'name ' : 'Jane Doe',\n",
+    "    'email' : 'janedoe@example.com',\n",
+    "    'phone': '010-4796-1346'\n",
+    "}}# 딕셔너리(각 데이터에 구분할 수 있는 구분자(이름)를 줌) -> 더 분류하기 간단하긴 함\n",
+    "\n",
+    "print(persons[0])\n",
+    "print(persons2['a']) #어떠한 방식으로 데이터를 관리하고 저장할 것인지의 차이임\n",
+    "print(persons2.keys()) # 2개 관리 , a가 만약 두개면 overwrite됨. 두 개일 경우에도 a,b로 나타남"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 16,
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "SyntaxError",
+     "evalue": "invalid syntax (<ipython-input-16-ff2708a7ee55>, line 3)",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[1;36m  File \u001b[1;32m\"<ipython-input-16-ff2708a7ee55>\"\u001b[1;36m, line \u001b[1;32m3\u001b[0m\n\u001b[1;33m    a3 = list(range(1:10)) # list로 바꿈\u001b[0m\n\u001b[1;37m                     ^\u001b[0m\n\u001b[1;31mSyntaxError\u001b[0m\u001b[1;31m:\u001b[0m invalid syntax\n"
+     ]
+    }
+   ],
+   "source": [
+    "a = (1,2,3,4,5) # 튜플 -> 튜플 자체는 리스트로 바꿀 수 없으므로 다른 변수로 리스트 만들어야 함\n",
+    "a2 = list(a) # a2는 리스트가 됨\n",
+    "a3 = list(range(1:10)) # list로 바꿈"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 27,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "{1: 'a'}\n",
+      "{1: 'a', 2: 'b'}\n",
+      "{1: 'a', 2: 'b', 'name': 'pey'}\n",
+      "{1: 'a', 2: 'b', 'name': 'pey', 3: [1, 2, 3]}\n",
+      "{1: 'modified', 2: 'b', 'name': 'pey', 3: [1, 2, 3], 4: 'appended'}\n",
+      "1: modified\n",
+      "2: None\n",
+      "2: 0\n"
+     ]
+    }
+   ],
+   "source": [
+    "a = {1: 'a'} \n",
+    "print(a)\n",
+    "a[2] = 'b' \n",
+    "print(a)\n",
+    "a['name'] = 'pey' \n",
+    "print(a)\n",
+    "a[3] = [1,2,3] \n",
+    "print(a)\n",
+    "a.update({1: 'modified', 4: 'appended'}) \n",
+    "print(a)\n",
+    "print('1:', a.get(1, 10)) #첫 번째 원소 보기 뒤에는 default값\n",
+    "print('2:', a.get(10)) # get 함수는 없는걸 요청해도 오류 안나게 하는것\n",
+    "print('2:', a.get(10,0)) #get(key, default-value) default-value: 키에 해당하는 값이 없을 때 선택될 값\n",
+    "# print('3:', a[10]) key 값 없는 경우 오류-> get 함수 이용하면 오류는 안난다."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 31,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "{'name': 'pey', 'phone': '0119993323', 'birth': '1118'}\n",
+      "dict_keys(['name', 'phone', 'birth'])\n",
+      "dict_values(['pey', '0119993323', '1118'])\n",
+      "dict_items([('name', 'pey'), ('phone', '0119993323'), ('birth', '1118')])\n"
+     ]
+    }
+   ],
+   "source": [
+    "a = {'name': 'pey', 'phone': '0119993323', 'birth': '1118'}\n",
+    "print(a)\n",
+    "print(a.keys()) # key 가져옴\n",
+    "print(a.values())\n",
+    "print(a.items()) # key와 value 모두 가져옴 #dict items는 튜플의 리스트"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 38,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "name\n",
+      "phone\n",
+      "birth\n",
+      "pey\n",
+      "0119993323\n",
+      "1118\n",
+      "********************\n",
+      "('name', 'pey')\n",
+      "('phone', '0119993323')\n",
+      "('birth', '1118')\n",
+      "name : pey\n",
+      "phone : 0119993323\n",
+      "birth : 1118\n",
+      "pey\n",
+      "0119993323\n",
+      "1118\n"
+     ]
+    }
+   ],
+   "source": [
+    "a = {'name': 'pey', 'phone': '0119993323', 'birth': '1118'}\n",
+    "for tmp in a:\n",
+    "    print(tmp) # dictionary를 반복문에 넣으면 key의 반복문이 됨. default\n",
+    "for tmp in a.values(): # values의 반복문\n",
+    "    print(tmp)\n",
+    "print(\"*\" * 20)\n",
+    "\n",
+    "for temp in a.items(): # 이걸 마니 씀!튜플의 리스트\n",
+    "    print(temp)\n",
+    "for key,value in a.items(): #dictionary만 쓸 수 있음, list 불가. 이걸 마니 씀!!!!!!!*********\n",
+    "    print(key,':',value) # a.items()를 이용하면 해체하며 튜플을 주므로 key value를 해체해서 받을 수 있음\n",
+    "for _,value in a.items(): #value만 갖고 싶음. -> _(형태만 있는 것) 이걸 마니 씀!!!!!!!*********\n",
+    "    print(value) #value값만 가져옴"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 41,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "True\n",
+      "False\n",
+      "False\n"
+     ]
+    }
+   ],
+   "source": [
+    "a = {'name': 'pey', 'phone': '0119993323', 'birth': '1118'}\n",
+    "print('name' in a) # a의 key 목록에 'name'이 있으면 True -> key의 list처럼 해석\n",
+    "print('x' in a)\n",
+    "print('x' in a.values()) # a의 values 목록에 'name'이 있으면 True -> key의 list처럼 해석"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 48,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]\n",
+      "[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]\n",
+      "[3, 9, 15, 21, 27]\n",
+      "[3, 9, 15, 21, 27]\n"
+     ]
+    }
+   ],
+   "source": [
+    "lst = list(range(1,11))\n",
+    "print(lst)\n",
+    "\n",
+    "lst2 = []\n",
+    "for idx in range( len(lst) ):\n",
+    "    lst2.append(lst[idx] * 3)\n",
+    "    \n",
+    "print(lst)\n",
+    "\n",
+    "lst3 = [ n * 3 for n in lst ] # for n in lst: n*3 을 리스트로 만들어라. 와 같음 => [ 표현식 for x in 목록 if x의 조건] 뒤에 if문도 가능. for문의 x를 x조건에 넣고 T인경우 표현식으로 가는 구조\n",
+    "\n",
+    "lst4 = [ n * 3 for n in lst if n % 2 == 1 ]\n",
+    "print(lst4)\n",
+    "\n",
+    "lst5 = [ n * 3 for n in lst if n % 2 == 1 ]\n",
+    "print(lst5)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 56,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "0123456789\n",
+      "for - else\n",
+      "**********\n",
+      "0\n",
+      "1\n",
+      "2\n",
+      "3\n",
+      "4\n",
+      "5\n",
+      "6\n"
+     ]
+    }
+   ],
+   "source": [
+    "for idx in range(10):\n",
+    "    print(idx, end=\"\") # data붙이기\n",
+    "else:\n",
+    "    print('\\nfor - else')\n",
+    "print(\"*\" * 10 )\n",
+    "for idx in range(10):\n",
+    "    print(idx)\n",
+    "    if idx > 5:\n",
+    "        break \n",
+    "else: # 반복문 안에서 break가 처리되지 않았을 때 실행됨.반복문이 마무리 되지 않은 경우 실행하는 구문\n",
+    "    print('for - else')\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 58,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "10\n"
+     ]
+    }
+   ],
+   "source": [
+    " a = 0\n",
+    "while a < 10:\n",
+    "    a = a+1\n",
+    "    if a % 2 == 0: continue # 반복문의 처음 위치로 이동\n",
+    "print(a)  # 홀수 번째에서 출력"
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.6.10"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 4
+}
